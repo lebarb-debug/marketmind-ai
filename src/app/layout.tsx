@@ -40,12 +40,17 @@ export default function RootLayout({
           <TooltipProvider>
             <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
               <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
-                <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
-                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground text-xs font-bold">
-                    M
-                  </span>
-                  MarketMind AI
-                </Link>
+                <div className="flex items-center gap-6">
+                  <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
+                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground text-xs font-bold">
+                      M
+                    </span>
+                    MarketMind AI
+                  </Link>
+                  <Link href="/coverage" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+                    Coverage
+                  </Link>
+                </div>
                 <ThemeToggle />
               </div>
             </header>

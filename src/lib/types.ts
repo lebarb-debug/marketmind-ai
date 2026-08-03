@@ -40,7 +40,7 @@ const VocabTermSchema = z.object({
   def: z.string().min(1),
 });
 
-const SourceSchema = z.object({
+export const SourceSchema = z.object({
   label: z.string().min(1),
   url: z.string().url(),
 });
@@ -122,3 +122,33 @@ export type QuizQuestion = z.infer<typeof QuizQuestionSchema>;
 export type RelatedEvent = z.infer<typeof RelatedEventSchema>;
 export type Panel = z.infer<typeof PanelSchema>;
 export type Character = z.infer<typeof CharacterSchema>;
+
+// ---------- "Coverage" stock tracker ----------
+const StockNewsEntrySchema = z.object({
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  headline: z.string().min(1),
+  takeaway: z.string().min(1), // 2-4 sentence analyst-note body
+  metric: z.string().optional(), // e.g. "Shares +4.2% to $287.16"
+  sources: z.array(SourceSchema).min(1),
+});
+
+const CompetitorSchema = z.object({
+  name: z.string().min(1),
+  note: z.string().min(1), // 1-sentence competitive positioning note
+});
+
+export const StockProfileSchema = z.object({
+  ticker: z.string().min(1),
+  companyName: z.string().min(1),
+  sector: z.string().min(1),
+  stockType: z.array(z.string().min(1)).min(1),
+  whatTheyDo: z.string().min(1),
+  whatsSpecial: z.array(z.string().min(1)).min(2),
+  competitors: z.array(CompetitorSchema).min(2),
+  keyConsiderations: z.array(z.string().min(1)).min(3),
+  newsUpdates: z.array(StockNewsEntrySchema).min(1),
+});
+
+export type StockProfile = z.infer<typeof StockProfileSchema>;
+export type StockNewsEntry = z.infer<typeof StockNewsEntrySchema>;
+export type Competitor = z.infer<typeof CompetitorSchema>;
