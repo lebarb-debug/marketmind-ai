@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { SpriteDefs } from "@/components/sprites/SpriteDefs";
+import { Logo } from "@/components/brand/Logo";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -42,9 +43,7 @@ export default function RootLayout({
               <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-3">
                 <div className="flex items-center gap-6">
                   <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
-                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground text-xs font-bold">
-                      M
-                    </span>
+                    <Logo className="h-6 w-6" />
                     MarketMind AI
                   </Link>
                   <Link href="/coverage" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
