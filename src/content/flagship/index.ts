@@ -15,6 +15,9 @@ import { jerseyMikesIpoDebut20260730Comic } from "./jersey-mikes-ipo-debut-2026-
 import { iranStrikeCalledOffOilCrash20260803Comic } from "./iran-strike-called-off-oil-crash-2026-08-03";
 import { usJapanYenIntervention20260803Comic } from "./us-japan-yen-intervention-2026-08-03";
 import { amazon3TrillionMarketCap20260803Comic } from "./amazon-3-trillion-market-cap-2026-08-03";
+import { chevronRecordProfitWarPremium20260731Comic } from "./chevron-record-profit-war-premium-2026-07-31";
+import { goldSnapsLosingStreak20260731Comic } from "./gold-snaps-losing-streak-2026-07-31";
+import { alibabaQwenMaxAiModel20260803Comic } from "./alibaba-qwen-max-ai-model-2026-08-03";
 
 const RAW_FLAGSHIP_COMICS = [
   chinaDuvChipSelloff20260728Comic,
@@ -33,6 +36,9 @@ const RAW_FLAGSHIP_COMICS = [
   iranStrikeCalledOffOilCrash20260803Comic,
   usJapanYenIntervention20260803Comic,
   amazon3TrillionMarketCap20260803Comic,
+  chevronRecordProfitWarPremium20260731Comic,
+  goldSnapsLosingStreak20260731Comic,
+  alibabaQwenMaxAiModel20260803Comic,
 ];
 
 // Fails loudly at build/dev-server-start time if any hand-authored field is
