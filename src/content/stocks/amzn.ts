@@ -26,6 +26,17 @@ export const amznProfile = {
   ],
   newsUpdates: [
     {
+      date: "2026-08-04",
+      headline: "Jeff Bezos files to sell $4 billion in Amazon stock; shares fall 2%",
+      takeaway:
+        "Amazon founder Jeff Bezos disclosed a plan to sell about 15 million shares — roughly $4.07 billion at Monday's closing price of $284.02 — under a Rule 10b5-1 trading plan he adopted on November 14, 2025. The sale, executed Monday through Morgan Stanley Smith Barney, comes one day after Amazon crossed $3 trillion in market value. Shares fell more than 2% when markets opened Tuesday. Bezos will still hold about 880.95 million Amazon shares, a stake worth roughly $250 billion, and has historically used proceeds from such sales to fund Blue Origin and other ventures.",
+      metric: "Shares -2% at Tuesday's open",
+      sources: [
+        { label: "Jeff Bezos just filed to sell $4 billion in Amazon. The shares are falling — CNBC", url: "https://www.cnbc.com/2026/08/04/jeff-bezos-just-filed-to-sell-4-billion-in-amazon-the-shares-are-falling.html" },
+        { label: "Jeff Bezos files to sell $4 billion in Amazon stock after record high — Yahoo Finance", url: "https://finance.yahoo.com/markets/stocks/articles/jeff-bezos-files-sell-4-133812157.html" },
+      ],
+    },
+    {
       date: "2026-08-03",
       headline: "Amazon tops $3 trillion market cap, becomes fifth company ever to reach the milestone",
       takeaway:
