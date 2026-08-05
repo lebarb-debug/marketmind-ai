@@ -26,6 +26,16 @@ export const msftProfile = {
   ],
   newsUpdates: [
     {
+      date: "2026-08-04",
+      headline: "Microsoft expands Azure partnership with AMD, adding Helios systems and 6th-gen EPYC CPUs",
+      takeaway:
+        "Alongside AMD's Q2 earnings report, Microsoft announced an expanded collaboration to deploy AMD's new Helios rackscale AI infrastructure and 6th-generation EPYC CPUs at scale across Azure — broadening Microsoft's chip supply beyond NVIDIA for its cloud data centers. The move gives Azure a second major AI-hardware supplier as infrastructure demand continues to outstrip any single vendor's capacity.",
+      sources: [
+        { label: "AMD Sales Outlook Disappoints Investors After AI-Fueled Rally — Bloomberg", url: "https://www.bloomberg.com/news/articles/2026-08-04/amd-sales-outlook-disappoints-investors-after-ai-fueled-rally" },
+        { label: "AMD earnings report Q2 2026 — CNBC", url: "https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html" },
+      ],
+    },
+    {
       date: "2026-08-03",
       headline: "Microsoft shares extend rally, up 2% premarket on continued AI-cloud momentum",
       takeaway:
